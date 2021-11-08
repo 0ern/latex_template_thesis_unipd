@@ -13,11 +13,8 @@ Basato sul repository di [mamio1994](https://github.com/mamio1994/template-latex
 
 ## English
 
-This is a simple template for writing your dissertation.
-It was made for the University of Padua (UniPD) but can easily be adapted for other universities.
+It is ready to use on the online editor [Overleaf](https://www.overleaf.com/): just download this repository as a .zip file and, after registering for free on Overleaf, on your projects page press " New project "and then" Load project ".
 
-It is ready to use on the online editor [Overleaf] (https://www.overleaf.com/): just download this repository as a .zip file and, after registering for free on Overleaf, on your projects page press " New project "and then" Load project ".
+[See the PDF for a preview](https://github.com/0ern/latex_template_thesis_unipd/blob/main/Template.pdf).
 
-[See the PDF for a preview] (https://github.com/0ern/latex_template_thesis_unipd/blob/main/Template.pdf).
-
-Based on the [mamio1994] repository (https://github.com/mamio1994/template-latex-unipd).
+Based on the repository of[mamio1994](https://github.com/mamio1994/template-latex-unipd).
