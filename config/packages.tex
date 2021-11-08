@@ -1,0 +1,91 @@
+% Codifica
+\usepackage[utf8]{inputenc}
+
+% Lingua, sostituire italian con english nel caso in cui la tesi sia scritta in inglese
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+
+% Stile font
+\usepackage{lmodern}
+
+% Colori
+\usepackage[usenames]{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{colortbl}
+
+% Pacchetto per definire layout di pagina
+%\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage[left=3cm, right=3cm, bottom=3cm]{geometry}
+
+% Spazia linee all'interno del documento
+\usepackage{setspace}
+
+% Impostazioni note a piè pagina
+\usepackage[stable, multiple]{footmisc}
+
+% Crea link ipertestuali
+\usepackage[hidelinks, hyperfootnotes=false]{hyperref}
+
+% PDF in formato PDF/A-1b
+%\usepackage[a-1b]{pdfx}
+
+% Inclusione immagini
+\usepackage{graphicx}
+
+% Didascalie immagini
+\usepackage[hang, small, sf, labelfont=bf]{caption}
+\usepackage{subcaption}
+
+% Formattazione url
+\usepackage{url}
+
+% Inserimento formule
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+% Listati di codice
+\usepackage{verbatim}
+\usepackage{listings}
+
+%Inserimento pseudocodice
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Citazione frasi
+\usepackage{csquotes}
+
+% Citazioni e riferimenti a label
+%\usepackage{cite} % Don't use with biblatex package
+%\usepackage[english]{varioref}
+
+% Bibliografia
+% This ----------------------------------------------------------
+\usepackage[backend=biber, style=numeric, sorting=none, backref=true]{biblatex} % biber or bibtex - numeric or alphabetic - none or nty
+\addbibresource{chapters/references.bib}
+% Or this -------------------------------------------------------
+% \usepackage{natbib} 
+% \usepackage[nottoc]{tocbibind}
+% \bibliographystyle{plain}
+
+\usepackage{chngcntr}
+% \counterwithin{figure}{section} % Change figure numbering by section (with chngcntr pkg)
+% \counterwithin{table}{section} % Change table numbering by section (with chngcntr pkg)
+% \numberwithin{equation}{section} % Change equation numbering by section (with amsmath pkg)
+\counterwithout{footnote}{chapter} % Change footnote numbering by chapter (with chngcntr pkg)
+
+% Inserimento di Lorem ipsum nel testo
+\usepackage{lipsum}
+
+% Prima pagina bianca
+\usepackage{afterpage}
+\newcommand\myemptypage{
+                        \null
+                        \thispagestyle{empty}
+                        \addtocounter{page}{-1}
+                        \newpage
+                        }
+
+\usepackage{tabularx} 
+
+%\usepackage{marginnote}

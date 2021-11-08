@@ -1,0 +1,27 @@
+\section{Immagine multipla}
+
+Inserire più ``sottofigure" in una figura.
+\begin{figure}[!ht]
+    \centering
+    
+	%Prima riga
+	\begin{subfigure}{0.49\textwidth} %Controllo della posizione in orizzontale
+		\includegraphics[width=0.9\textwidth]{images/cap2/test} 
+		\caption{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=0.9\textwidth]{images/cap2/test}
+		\caption{}
+	\end{subfigure}
+	
+	%Seconda riga
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=0.9\textwidth]{images/cap2/test} 
+		\caption{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=0.9\textwidth]{images/cap2/test}
+		\caption{}
+	\end{subfigure}
+    \caption{Esempio di figura composta da 4 figure.}
+\end{figure}

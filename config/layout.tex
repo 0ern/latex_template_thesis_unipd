@@ -1,0 +1,68 @@
+\newfont{\ttvar}{cmvtt10 scaled 1200}   % nuovo carattere tipi courier a spaziatura variabile per le dimostrazioni
+
+% margini senato
+\textwidth       =  14.50 cm            % larghezza 21 cm - 4 cm (sinistro) - 2.5 (destro)
+\textheight      =  23.10 cm            % altezza 29.7 cm - 3 cm (superiore) - 2 (inferiore)
+\topmargin       =   0.00 cm            % margine superiore 3 cm diminuito di 1 inch
+\oddsidemargin   =   1.46 cm            % margine sinistro 4 cm diminuito di 1 inch
+\evensidemargin  =  -0.04 cm            % margine destro 2.5 cm diminuito di un inch
+
+\setlength{\headsep}{1.0cm}
+\setlength{\footskip}{1.0cm}
+\setlength{\headheight}{15pt} % ...at least 14.9999pt
+\parindent = 0.7cm
+\captionmargin = 0.7cm
+
+%Interlinea 1.5
+\onehalfspacing
+
+% stile pagina
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1 }{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}{}}
+\fancyhead{}
+\fancyhead[LE,RO]{\sffamily \thepage}
+\fancyhead[RE]{\sffamily \leftmark}
+\fancyhead[LO]{\sffamily \rightmark}
+\fancyfoot{}%[CE,CO]{\sffamily \thepage}
+
+%\renewcommand{\headrulewidth}{0pt}
+% ridefinisco lo stile plain
+\fancypagestyle{plain}{ \fancyhead{} \fancyfoot{}
+                        \fancyfoot[C]{\sffamily \thepage}
+                        \renewcommand{\headrulewidth}{0pt}
+                      }
+
+% stile per i titoli
+%\allsectionsfont{\sffamily \raggedright}
+
+%definisco stile listati di codice
+\lstdefinestyle{mystyle}{
+                        backgroundcolor=\color[RGB]{240,240,240}, %Red, Green, Blue from 0 to 255
+                        basicstyle=\color{black}\ttfamily\footnotesize,
+                        commentstyle=\color{OliveGreen}\textit\tiny,
+                        keywordstyle=\color{blue},
+                        identifierstyle=\color{black},
+                        stringstyle=\color{violet},
+                        breakatwhitespace=false,         
+                        breaklines=true,
+                        captionpos=b, %bottom, top
+                        rulecolor=\color{black},
+                        frame=trBL, %Top,Right,Bottom,Left (Case sensitive)
+                        frameround=tttt, %t=round corner, f=straight corner
+                        keepspaces=true,                 
+                        numbers=left,                    
+                        numbersep=10pt,
+                        numberstyle=\color{gray},
+                        showspaces=false,                
+                        showstringspaces=false,
+                        showtabs=false,                  
+                        tabsize=1,
+                        columns=fullflexible %makes code copy and pastable
+                        }
+
+\lstset{style=mystyle}
+\lstset{emph={RandomForestClassifier, RandomizedSearchCV, GridSearchCV},emphstyle=\underbar}
+
+\renewcommand{\lstlistingname}{Codice} % Per rinominare la descrizione dei codici
+\renewcommand{\lstlistlistingname}{Elenco dei codici} % Per rinominare la descrizione dei codici

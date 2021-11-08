@@ -1,0 +1,106 @@
+\documentclass[a4paper, 12pt, hyphens]{book}
+
+% Pacchetti utili
+\input{config/packages}
+
+% Impostazioni dei margini, definizione di colori e stili
+\input{config/layout}
+
+% Nuovi comandi
+% \input{config/new_commands}
+
+\begin{document}
+
+    \frontmatter
+
+    \myemptypage % Pagina bianca prima del titolo
+    
+    % Prima pagina ----------------------------------------------------------------------
+
+    \input{chapters/titlepage}
+    
+    \thispagestyle{empty} % Pagina bianca dopo il titolo
+    \cleardoublepage
+    
+    % Citazione, ringraziamenti, abstract, indice ---------------------------------------
+    
+    \mainmatter  
+    
+    \pagenumbering{roman} % Numerazione romana
+    \thispagestyle{empty}
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage} % Comando per iniziare il capitolo su pagina dispari
+    \input{chapters/quote_thanks}
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage} 
+    \input{chapters/abstract}
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage} 
+    \input{chapters/introduction}
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \tableofcontents % Indice
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Elenco delle figure} % Per inserire nell'indice la lista dei codici (non è automatico)
+    \listoffigures % Lista figure
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Elenco delle tabelle} % Per inserire nell'indice la lista dei codici (non è automatico)
+    \listoftables % Lista tabelle
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Elenco dei codici} % Per inserire nell'indice la lista dei codici (non è automatico)
+    \lstlistoflistings % Lista codici
+    
+    % Capitoli --------------------------------------------------------------------------
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \pagenumbering{arabic} % Numerazione araba per i capitoli
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage} 
+    \input{chapters/cap1/intro_cap1} % File in cui verrà scritto il capitolo
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \input{chapters/cap2/intro_cap2} 
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \input{chapters/cap3/intro_cap3} 
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \input{chapters/cap4/intro_cap4}
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    \input{chapters/conclusions}
+    
+    % Bibliografia ----------------------------------------------------------------------
+    
+    \clearpage{\pagestyle{plain}\cleardoublepage}
+    
+    % This -------------------------------
+    %\printbibliography[heading=bibintoc]
+    
+    % Or this ----------------------------
+    % \chapter*{Bibliografia} \addcontentsline{toc}{chapter}{Bibliografia}
+    % \printbibliography[heading=subbibintoc, type=book,    title={Libri}]
+    % \printbibliography[heading=subbibintoc, type=article, title={Articoli}]
+    % \printbibliography[heading=subbibintoc, type=online,  title={Siti}]
+    % \printbibliography[heading=subbibintoc, type=misc,    title={Vari}]
+    
+    % Or this ----------------------------
+    \chapter*{Bibliografia} \addcontentsline{toc}{chapter}{Bibliografia}
+    \printbibliography[nottype=online, heading=subbibliography, keyword={cap1}, title={Capitolo 1}]
+    \printbibliography[nottype=online, heading=subbibliography, keyword={cap2}, title={Capitolo 2}]
+    \printbibliography[nottype=online, heading=subbibliography, keyword={cap3}, title={Capitolo 3}]
+    \printbibliography[nottype=online, heading=subbibliography, keyword={cap4}, title={Capitolo 4}]
+    
+    \chapter*{Sitografia} \addcontentsline{toc}{chapter}{Sitografia}
+    \printbibliography[type=online, heading=subbibliography, keyword={cap1}, title={Capitolo 1}]
+    \printbibliography[type=online, heading=subbibliography, keyword={cap2}, title={Capitolo 2}]
+    \printbibliography[type=online, heading=subbibliography, keyword={cap3}, title={Capitolo 3}]
+    \printbibliography[type=online, heading=subbibliography, keyword={cap4}, title={Capitolo 4}]
+        
+\end{document}
