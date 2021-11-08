@@ -17,4 +17,4 @@ It is ready to use on the online editor [Overleaf](https://www.overleaf.com/): j
 
 [See the PDF for a preview](https://github.com/0ern/latex_template_thesis_unipd/blob/main/Template.pdf).
 
-Based on the repository of[mamio1994](https://github.com/mamio1994/template-latex-unipd).
+Based on the repository of [mamio1994](https://github.com/mamio1994/template-latex-unipd).
