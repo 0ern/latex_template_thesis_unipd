@@ -1,6 +1,4 @@
-# Template LaTex per scrivere una tesi di laurea
-
-## Italiano
+# (IT) Template LaTex per scrivere una tesi di laurea
 
 Questo è un semplice template per scrivere la tua tesi di laurea.
 È stato fatto per l'Università degli Studi di Padova (UniPD) ma può essere facilmente adattata per altre università.
@@ -11,9 +9,7 @@ Questo è un semplice template per scrivere la tua tesi di laurea.
 
 Basato sul repository di [mamio1994](https://github.com/mamio1994/template-latex-unipd).
 
-# LaTeX template to write a thesis
-
-## English
+# (EN) LaTeX template to write a thesis
 
 This is a simple template for writing your thesis.
 It was made for the University of Padua (UniPD) but can easily be adapted for other universities.
