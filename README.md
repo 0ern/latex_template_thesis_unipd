@@ -1,4 +1,4 @@
-# Template in LaTex per scrivere una tesi di laurea
+# Template LaTex per scrivere una tesi di laurea
 
 ## Italiano
 
@@ -10,6 +10,8 @@ Questo è un semplice template per scrivere la tua tesi di laurea.
 [Guarda il PDF per un'anteprima](https://github.com/0ern/latex_template_thesis_unipd/blob/main/Template.pdf).
 
 Basato sul repository di [mamio1994](https://github.com/mamio1994/template-latex-unipd).
+
+# LaTeX template to write a thesis
 
 ## English
 
