@@ -1,7 +1,7 @@
 # (IT) Template LaTex per scrivere una tesi di laurea
 
 Questo è un semplice template per scrivere la tua tesi di laurea.
-È stato fatto per l'Università degli Studi di Padova (UniPD) ma può essere facilmente adattata per altre università.
+È stato fatto per l'Università degli Studi di Padova (UniPD) ma può essere facilmente adattato per altre università.
 
 È già pronto all'uso sull'editor online [Overleaf](https://it.overleaf.com/): basta scaricare questo repository come file .zip e, dopo essersi iscritti gratuitamente su Overleaf, nella pagina dei tuoi progetti premere "Nuovo progetto" e poi "Carica progetto".
 
